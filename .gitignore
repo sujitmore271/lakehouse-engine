@@ -1,0 +1,36 @@
+# Virtual Environment
+venv/
+env/
+.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+
+# Spark / Hadoop Scratch & Temp
+metastore_db/
+derby.log
+.ivy2/
+
+# Airflow Local State & Logs
+logs/
+airflow.cfg
+airflow.db
+
+# Generated Lakehouse Storage & Data Batches
+data/landing/*
+data/lakehouse/bronze/*
+data/lakehouse/silver/*
+data/lakehouse/gold/*
+!data/landing/.gitkeep
+!data/lakehouse/bronze/.gitkeep
+!data/lakehouse/silver/.gitkeep
+!data/lakehouse/gold/.gitkeep
+
+# IDE & OS specifics
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
